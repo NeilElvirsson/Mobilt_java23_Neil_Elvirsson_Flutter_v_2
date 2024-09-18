@@ -20,6 +20,11 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/images/darthvader.jpg
+    - assets/images/starvswars.jpg
+    - assets/images/jedi.webp
+
 
   uses-material-design: true
 
@@ -29,7 +34,7 @@ flutter_launcher_icons:
   ios: false
   image_path: "assets/icon/grit_academy_mobile.png"
   web:
-    genertate: true
+    generate: trues
     image_path: "web/grit_academy_mobile.png"
     background_color: "#ffffff"
     theme_color: "#ffffff"
