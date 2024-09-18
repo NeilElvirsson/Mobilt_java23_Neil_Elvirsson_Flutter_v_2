@@ -14,7 +14,9 @@ Main Page: Offers two options for users to select from – "Jedi Side" or "Dark 
 Jedi Page: Displays a themed background and a character image representing the Jedi side, along with a welcoming message.
 Dark Side Page: Presents a dark-themed background and a character image of Darth Vader (or a similar character) representing the Sith/Dark Side.
 Depending on the user's choice, the app will navigate to the appropriate themed page, providing an immersive experience based on the chosen side of the Force.
-## This page make you choose either Jedi or Darkside
+## Images 
+
+
 
 This project is a starting point for a Flutter application.
 
