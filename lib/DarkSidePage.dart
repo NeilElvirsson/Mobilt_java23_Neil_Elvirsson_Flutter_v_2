@@ -19,7 +19,7 @@ class DarkSidePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 const Text(
-                  'Welcome to the Dark Side!',
+                  'Welcome to the Dark Side!',//This is where i spawn pics
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 24,
