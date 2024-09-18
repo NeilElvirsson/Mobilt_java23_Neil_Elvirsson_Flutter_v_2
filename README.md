@@ -1,8 +1,10 @@
 # flutter_test2
 
-A new Flutter project.
+Flutter project.
 
 ## Getting Started
+
+### Star Wars themed App
 
 This project is a starting point for a Flutter application.
 
