@@ -17,7 +17,7 @@ Depending on the user's choice, the app will navigate to the appropriate themed 
 ## Images 
 <img 
   src="<img 
-  src="Screenshot_20240914_112239.png" 
+  src="Screenshot_20240918_222658.png" 
   alt="home, page" 
   title="homepage"
   width="200px"
