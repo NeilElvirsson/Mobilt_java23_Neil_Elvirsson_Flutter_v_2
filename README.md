@@ -39,9 +39,9 @@ Depending on the user's choice, the app will navigate to the appropriate themed 
   style="display: inline-block; margin: 0 auto; max-width: 50px">
   <img 
   src="<img 
-  src="Screenshot_20240914_112239.png" 
-  alt="home, page" 
-  title="homepage"
+  src="Screenshot_20240918_222716.png" 
+  alt="darkside, page" 
+  title="darksidepage"
   width="200px"
   style="display: inline-block; margin: 0 auto; max-width: 50px">" 
   alt="darkside, page" 
