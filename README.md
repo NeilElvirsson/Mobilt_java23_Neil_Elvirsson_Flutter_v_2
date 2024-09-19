@@ -16,38 +16,26 @@ Dark Side Page: Presents a dark-themed background and a character image of Darth
 Depending on the user's choice, the app will navigate to the appropriate themed page, providing an immersive experience based on the chosen side of the Force.
 ## Images 
 <img 
-  src="<img 
   src="Screenshot_20240918_222658.png" 
   alt="home, page" 
   title="homepage"
   width="200px"
   style="display: inline-block; margin: 0 auto; max-width: 50px">" 
-  alt="home, page" 
-  title="homepage"
-  width="200px"
-  style="display: inline-block; margin: 0 auto; max-width: 50px">
+  
   <img 
-  src="<img 
   src="Screenshot_20240918_222707.png" 
   alt="jedi, page" 
   title="jedipage"
   width="200px"
   style="display: inline-block; margin: 0 auto; max-width: 50px">" 
-  alt="jedi, page" 
-  title="jedipage"
-  width="200px"
-  style="display: inline-block; margin: 0 auto; max-width: 50px">
+  
   <img 
-  src="<img 
   src="Screenshot_20240918_222716.png" 
   alt="darkside, page" 
   title="darksidepage"
   width="200px"
   style="display: inline-block; margin: 0 auto; max-width: 50px">" 
-  alt="darkside, page" 
-  title="darksidepage"
-  width="200px"
-  style="display: inline-block; margin: 0 auto; max-width: 50px">
+  
 
 
 This project is a starting point for a Flutter application.
