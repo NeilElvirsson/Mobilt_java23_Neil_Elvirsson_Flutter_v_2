@@ -9,19 +9,17 @@ class JediPage extends StatefulWidget {
 }
 
 class _JediPageState extends State<JediPage> {
-  // Controllers för varje fält
+
   final TextEditingController _firstNameController = TextEditingController();
   final TextEditingController _lastNameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _numberController = TextEditingController();
 
-  // Form key för validering
   final _formKey = GlobalKey<FormState>();
 
-  // Checkbox state
   bool _newsletter = true;
 
-  // Funktion för att hantera när formuläret skickas
+
   Future<void> _saveToFirebase() async {
     if (_formKey.currentState!.validate()) {
       // Skicka data till Firestore
@@ -60,13 +58,13 @@ class _JediPageState extends State<JediPage> {
 
 
 
-      // Skicka till Firebase eller annan hantering här
+
     }
   }
 
   @override
   void dispose() {
-    // Glöm inte att rensa kontrollern när de inte längre behövs
+
     _firstNameController.dispose();
     _lastNameController.dispose();
     _emailController.dispose();
@@ -85,7 +83,7 @@ class _JediPageState extends State<JediPage> {
             fit: BoxFit.cover,
           ),
           Center(
-            child: SingleChildScrollView( // Scrolla om sidan är lång
+            child: SingleChildScrollView(
               padding: const EdgeInsets.all(16.0),
               child: Form(
                 key: _formKey,
@@ -101,7 +99,7 @@ class _JediPageState extends State<JediPage> {
                     ),
                     const SizedBox(height: 20),
 
-                    // Förnamn
+
                     TextFormField(
                       controller: _firstNameController,
                       decoration: const InputDecoration(
@@ -117,7 +115,7 @@ class _JediPageState extends State<JediPage> {
                       },
                     ),
 
-                    // Efternamn
+
                     TextFormField(
                       controller: _lastNameController,
                       decoration: const InputDecoration(
@@ -133,7 +131,6 @@ class _JediPageState extends State<JediPage> {
                       },
                     ),
 
-                    // E-postadress
                     TextFormField(
                       controller: _emailController,
                       decoration: const InputDecoration(
@@ -151,7 +148,6 @@ class _JediPageState extends State<JediPage> {
                       },
                     ),
 
-                    // Telefonnummer
                     TextFormField(
                       controller: _numberController,
                       decoration: const InputDecoration(
@@ -172,7 +168,6 @@ class _JediPageState extends State<JediPage> {
 
                     const SizedBox(height: 20),
 
-                    // Nyhetsbrev Checkbox
                     Row(
                       children: [
                         Checkbox(
@@ -189,7 +184,7 @@ class _JediPageState extends State<JediPage> {
 
                     const SizedBox(height: 20),
 
-                    // Skicka-knapp
+
                     ElevatedButton(
                       onPressed: _submitForm,
                       child: const Text('Submit'),

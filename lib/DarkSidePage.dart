@@ -9,19 +9,16 @@ class DarkSidePage extends StatefulWidget {
 }
 
 class _DarkSidePageState extends State<DarkSidePage> {
-  // Controllers för varje fält
+
   final TextEditingController _firstNameController = TextEditingController();
   final TextEditingController _lastNameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _numberController = TextEditingController();
 
-  // Form key för validering
   final _formKey = GlobalKey<FormState>();
 
-  // Checkbox state
   bool _newsletter = true;
 
-  // Funktion för att hantera när formuläret skickas
   Future<void> _saveToFirebase() async {
     if (_formKey.currentState!.validate()) {
       // Skicka data till Firestore
@@ -55,7 +52,7 @@ class _DarkSidePageState extends State<DarkSidePage> {
 
   @override
   void dispose() {
-    // Glöm inte att rensa kontrollern när de inte längre behövs
+
     _firstNameController.dispose();
     _lastNameController.dispose();
     _emailController.dispose();
@@ -90,7 +87,7 @@ class _DarkSidePageState extends State<DarkSidePage> {
                     ),
                     const SizedBox(height: 20),
 
-                    // Förnamn
+
                     TextFormField(
                       controller: _firstNameController,
                       decoration: const InputDecoration(
@@ -107,7 +104,7 @@ class _DarkSidePageState extends State<DarkSidePage> {
                       },
                     ),
 
-                    // Efternamn
+
                     TextFormField(
                       controller: _lastNameController,
                       decoration: const InputDecoration(
@@ -124,7 +121,7 @@ class _DarkSidePageState extends State<DarkSidePage> {
                       },
                     ),
 
-                    // E-postadress
+
                     TextFormField(
                       controller: _emailController,
                       decoration: const InputDecoration(
@@ -143,7 +140,7 @@ class _DarkSidePageState extends State<DarkSidePage> {
                       },
                     ),
 
-                    // Telefonnummer
+
                     TextFormField(
                       controller: _numberController,
                       decoration: const InputDecoration(
@@ -165,7 +162,7 @@ class _DarkSidePageState extends State<DarkSidePage> {
 
                     const SizedBox(height: 20),
 
-                    // Nyhetsbrev Checkbox
+
                     Row(
                       children: [
                         Checkbox(
@@ -182,7 +179,7 @@ class _DarkSidePageState extends State<DarkSidePage> {
 
                     const SizedBox(height: 20),
 
-                    // Skicka-knapp
+
                     ElevatedButton(
                       onPressed: _submitForm,
                       child: const Text('Submit'),
