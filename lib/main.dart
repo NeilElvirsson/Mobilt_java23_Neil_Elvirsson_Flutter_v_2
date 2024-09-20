@@ -4,6 +4,7 @@ import 'package:flutter_test2/firebase_options.dart';
 import 'DarkSidePage.dart';
 import 'JediPage.dart';
 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(

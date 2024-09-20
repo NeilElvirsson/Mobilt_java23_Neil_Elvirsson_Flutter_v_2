@@ -19,7 +19,7 @@ class _JediPageState extends State<JediPage> {
   final _formKey = GlobalKey<FormState>();
 
   // Checkbox state
-  bool _newsletter = false;
+  bool _newsletter = true;
 
   // Funktion för att hantera när formuläret skickas
   Future<void> _saveToFirebase() async {
@@ -183,7 +183,7 @@ class _JediPageState extends State<JediPage> {
                             });
                           },
                         ),
-                        const Text('Sign up for the newsletter'),
+                        const Text('Jedi Side', style: TextStyle(color: Colors.white)),
                       ],
                     ),
 
