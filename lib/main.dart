@@ -1,10 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_test2/secondPage.dart';
-
+import 'package:flutter_test2/firebase_options.dart';
 import 'DarkSidePage.dart';
 import 'JediPage.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const MyApp());
 }
 
@@ -41,21 +46,15 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
 
-  void _incrementCounter() {
-    setState(() {
-
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // Background image for the main page
+
           Image.asset(
-            'assets/images/starvswars.jpg', // Replace with your background image URL
+            'assets/images/starvswars.jpg',
             fit: BoxFit.cover,
           ),
           Center(
@@ -77,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blueGrey, // Jedi theme color
+                    backgroundColor: Colors.blueGrey,
                   ),
                   child: const Text('Jedi'),
                 ),
@@ -90,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.red, // Dark Side theme color
+                    backgroundColor: Colors.red,
                   ),
                   child: const Text('Dark Side'),
                 ),

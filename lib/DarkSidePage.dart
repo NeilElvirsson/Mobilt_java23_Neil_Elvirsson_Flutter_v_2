@@ -9,9 +9,8 @@ class DarkSidePage extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // Background image for Dark Side page
           Image.asset(
-            'assets/images/darthvader.jpg', // Replace with your Dark Side background image URL
+            'assets/images/darthvader.jpg',
             fit: BoxFit.cover,
           ),
           Center(
@@ -19,17 +18,17 @@ class DarkSidePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 const Text(
-                  'Welcome to the Dark Side!',//This is where i spawn pics
+                  'Welcome to the Dark Side!',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                // Additional content for Dark Side
+
                 const SizedBox(height: 20),
                 Image.asset(
-                  'assets/images/darthvader.jpg', // Replace with your Dark Side character image URL
+                  'assets/images/darthvader.jpg',
                   width: 200,
                   height: 200,
                 ),
